@@ -73,6 +73,7 @@ postfix reload 2>&1 >>$ARQ
 
 
     # Remove the $USER from mailq
+    #(rmqueue script: https://github.com/covolato/rmqueue)
      /usr/local/sbin/rmqueue $USER 2>&1 >>$ARQ
      $echo "Apagou a fila do $USER $TOT" >>$ARQ
      cat $ARQ | mail $MAIL_TO -s "BLOQUEIO $HOST DIA:$DIA"
