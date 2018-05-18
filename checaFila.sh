@@ -65,10 +65,10 @@ postfix reload 2>&1 >>$ARQ
 #########################################################################################
  $echo "Bloqueou o $USER $TOT" >> $ARQ
  $echo "------------------------------------------------------------->" >> $ARQ
- $echo "Roda a cada 10 minutos na $HOST" >> $ARQ
+ $echo "Roda a cada 5 minutos na $HOST" >> $ARQ
  $echo "a fila de email foi apagada desse usuario" >> $ARQ
  $echo "Limite para bloqueio e $NRCPTLIMIT" >> $ARQ
- $echo "Se a fila estiver maior que $QLIMIT apaga os emails do usuario" >> $ARQ
+ $echo " $USER bloqueado no Postfix Header_checks >> $ARQ
  $echo "PRG: $0" >> $ARQ
 
 
